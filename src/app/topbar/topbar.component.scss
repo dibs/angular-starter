@@ -1,0 +1,67 @@
+//*styles for topbar content only*/
+@import '../../styles/typography';
+@import '../../styles/colours';
+@import '../../styles/mixins';
+
+#topbar {
+    background: $dark;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    @include box-shadow();
+    //overflow: hidden;
+    
+    
+    a{
+        display: inline-block;
+        text-decoration: none;
+        
+    }
+    h1 {
+        font-family: $sans;
+        font-size: 2rem;
+        line-height: 50px;
+        color: $light-d2;
+        margin: 0;
+        padding: 0 1rem;
+        @include stroked(2, $dark-d1, 4, $dark-d2);
+
+        &:hover {
+            color: $dark;
+            @include stroked(2, $light-d1, 4, $light-d2);
+        }
+    }
+
+    nav {
+        display: inline-block;
+        top: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1rem;
+        font-family: $serif;
+        color: $light;
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline-block;
+            height: 50px;
+            padding: 0 1rem;
+            // border: 1px $green dashed;
+            font-size: 1.5rem;
+            line-height: 50px;
+            margin: 0;
+            a {
+                color: $light-d2;
+                &:hover {
+                    color: $dark-l1;
+                }
+            }
+        }
+    }
+}
