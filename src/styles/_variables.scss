@@ -1,1 +1,6 @@
-$nav-button-color: #00838F;
+//@import 'variables';
+
+@import 'colours';
+@import 'typography';
+@import 'mixins';
+$nav-button-color: $purple-d2;
