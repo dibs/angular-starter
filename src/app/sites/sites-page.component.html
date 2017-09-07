@@ -1,0 +1,22 @@
+<div class="sites-page-container">
+  
+  
+  <!--<fa [name]="fa-camera-retro" ></fa>-->
+  
+  <!--<i fa [name]="'times'" border=true></i>-->
+
+
+  <h2 (click)="showSites()">
+    Sites
+  </h2>
+  <img src="../assets/img/rings.svg" class="loader" *ngIf!="sites"/>
+  <ul *ngIf="!showingSites" class="sites">
+    <li *ngFor="let site of sites"
+      [class.selected]="site === selectedSite"
+      (click)="onSelect(site)">
+      <span class="badge">{{site.name}}</span> {{site._field_url}}
+    </li>
+  </ul>
+
+  
+</div>

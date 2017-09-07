@@ -1,0 +1,46 @@
+@import '../../assets/scss/colours';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/mixins';
+.sites-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: $dark-d1;
+    display: block;
+}
+h2 {
+    font-family: $sans;
+    margin: 0;
+    line-height: 50px;
+    display: inline-block;
+    margin-left: 50px;
+    display: block;
+}
+.loader {
+    margin: 0 auto;
+    display: block;
+}
+.selected {
+    font-weight: 800;
+    color: $light-l1;
+
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+        background: $dark-d1;
+        color: $light-d2;
+        padding: 1rem;
+        margin: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    li:hover, li.selected {
+        background: $dark-l1;
+    }
+}
