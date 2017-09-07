@@ -19,6 +19,8 @@ import { AppState } from './app.service';
     './app.component.css'
   ],
   template: `
+    <topbar></topbar>
+  
     <nav>
       <a [routerLink]=" ['./'] "
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
@@ -60,7 +62,7 @@ import { AppState } from './app.service';
 })
 export class AppComponent implements OnInit {
   public angularclassLogo = 'assets/img/angularclass-avatar.png';
-  public name = 'Angular 2 Webpack Starter';
+  public name = 'Fabric';
   public url = 'https://twitter.com/AngularClass';
 
   constructor(
